@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>InternShip Program</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="../assets/css/style.css" rel="stylesheet" />
+
+
+<body>
+
+    <header id="header" class=" d-flex align-items-center header-transparent">
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xl-11 d-flex align-items-center justify-content-between">
+                    <h1 class="logo">
+                        <a href="../index.html"><img src="../assets/img/favicon.png" width="100%" height="auto"
+                                alt="" /></a>
+                    </h1>
+                    <!-- Uncomment below if you prefer to use an image logo -->
+                    <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+                    <nav id="navbar" class="navbar">
+                        <ul>
+                            <li>
+                                <a class="nav-link" href="../index.html">Home</a>
+                            </li>
+                            <li><a class="nav-link" href="../index.html#about">About Us</a></li>
+                            <li>
+                                <a class="nav-link" href="../index.html#services">Services</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="../index.html#portfolio">Products</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="../index.html#clients">Our Clients</a>
+                            </li>
+                            <a class="nav-link active" href="../career.html">Career</a>
+
+                            <li>
+                                <a class="nav-link" href="../index.html#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <i class="bi bi-list mobile-nav-toggle"></i>
+                    </nav>
+                    <!-- .navbar -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="step-inner-content">
+        <form class="" action="action.php" id="wizard" method="POST" enctype="multipart/form-data">
+            <div class="details-form-area">
+                <div class="inner-title pb-4 text-center">
+                    <h3>Enter your Information</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="form-input-inner  has-float-label">
+                            <input type="text" name="first_name" placeholder="First Name" class="form-control" required>
+                            <label>First Name</label>
+                            <div class="icon-bg text-center">
+                                <i class="fas fa-user"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-input-inner  has-float-label">
+                            <input type="text" name="last_name" placeholder="Last Name" class="form-control" required>
+                            <label>Last Name</label>
+                            <div class="icon-bg text-center">
+                                <i class="fas fa-user"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-input-inner  date-of-birth">
+                            <input data-date-format="yyyy/mm/dd" placeholder="Date of Birth" name="dob"
+                                class="datepicker" required>
+                            <div class="icon-bg text-center">
+                                <i class="fas fa-bullhorn"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+
+                    <div class="col-lg-4">
+
+
+                        <div class="form-input-inner has-float-label">
+                            <input type="text" name="cnic" placeholder="XXXXXXXXXXXXX" class="form-control"
+                                maxlength="13" required>
+                            <label>CNIC</label>
+                            <div class="icon-bg text-center">
+                                <i class="fas fa-id-card"></i>
+                            </div>
+                            <p style="color: red;" id="error-message-cnic" class="error-message"></p>
+                        </div>
+
+                    </div>
+
+
+                    <!---->
+
+                    <div class="col-lg-4">
+
+
+                        <div class="form-input-inner  has-float-label">
+                            <input type="email" name="email" placeholder="Email" class="form-control required" required>
+                            <label>Email</label>
+                            <p style="color: red; margin-bottom:4px;" id="error-message-email" class="error-message">
+                            </p>
+                            <div class="icon-bg text-center">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <p style="color: red" id="emailError" class="error"></p>
+
+                        </div>
+                    </div>
+
+                    <!->
+                        <div class="col-lg-4">
+                            <div class="form-input-inner  has-float-label">
+                                <input type="text" name="phone" placeholder="03XXXXXXXXX" class="form-control"
+                                    maxlength="11" required>
+                                <label>Mobile No.</label>
+                                <div class="icon-bg text-center">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-input-inner  has-float-label">
+                                <input type="number" name="siblings" placeholder="" class="form-control"
+                                    type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); if (parseInt(this.value) < 0) this.value = '0';" maxlength="2">
+                                <label>siblings</label>
+                                <div class="icon-bg text-center">
+                                    <i class="fas fa-user"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-input-inner  has-float-label">
+                                <input type="text" name="father_profession" placeholder="Father Profession"
+                                    class="form-control">
+                                <label>Father Profession</label>
+                                <div class="icon-bg text-center">
+                                    <i class="fas fa-user"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-input-inner  has-float-label">
+                                <input type="text" name="father_salary" placeholder="" class="form-control">
+                                <label>Father Monthy Salery</label>
+                                <div class="icon-bg text-center">
+                                    <i class="fas fa-user"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="form-input-inner select-option-area ">
+                                <select name="city_list" required>
+                                    <option>Select City</option>
+                                    <option> Karachi </option>
+                                    <option> Lahore </option>
+                                    <option> Faisalabad </option>
+                                    <option> Rawalpindi </option>
+                                    <option> Multan </option>
+                                    <option> Hyderabad </option>
+                                    <option> Gujranwala </option>
+                                    <option> Peshawar </option>
+                                    <option> Islamabad </option>
+                                    <option> Bahawalpur </option>
+                                    <option> Sargodha </option>
+                                    <option> Sialkot </option>
+                                    <option> Quetta </option>
+                                    <option> Sukkur </option>
+                                    <option> Jhang </option>
+                                    <option> Shekhupura </option>
+                                    <option> Mardan </option>
+                                    <option> Gujrat </option>
+                                    <option> Larkana </option>
+                                    <option> Kasur </option>
+                                    <option> Rahim Yar Khan </option>
+                                    <option> Sahiwal </option>
+                                    <option> Okara </option>
+                                    <option> Wah Cantonment </option>
+                                    <option> Dera Ghazi Khan </option>
+                                    <option> Mingora </option>
+                                    <option> Mirpur Khas </option>
+                                    <option> Chiniot </option>
+                                    <option> Nawabshah </option>
+                                    <option> Kāmoke </option>
+                                    <option> Burewala </option>
+                                    <option> Jhelum </option>
+                                    <option> Sadiqabad </option>
+                                    <option> Khanewal </option>
+                                    <option> Hafizabad </option>
+                                    <option> Kohat </option>
+                                    <option> Jacobabad </option>
+                                    <option> Shikarpur </option>
+                                    <option> Muzaffargarh </option>
+                                    <option> Khanpur </option>
+                                    <option> Gojra </option>
+                                    <option> Bahawalnagar </option>
+                                    <option> Abbottabad </option>
+                                    <option> Muridke </option>
+                                    <option> Pakpattan </option>
+                                    <option> Khuzdar </option>
+                                    <option> Jaranwala </option>
+                                    <option> Chishtian </option>
+                                    <option> Daska </option>
+                                    <option> Bhalwal </option>
+                                    <option> Mandi Bahauddin </option>
+                                    <option> Ahmadpur East </option>
+                                    <option> Kamalia </option>
+                                    <option> Tando Adam </option>
+                                    <option> Khairpur </option>
+                                    <option> Dera Ismail Khan </option>
+                                    <option> Vehari </option>
+                                    <option> Nowshera </option>
+                                    <option> Dadu </option>
+                                    <option> Wazirabad </option>
+                                    <option> Khushab </option>
+                                    <option> Charsada </option>
+                                    <option> Swabi </option>
+                                    <option> Chakwal </option>
+                                    <option> Mianwali </option>
+                                    <option> Tando Allahyar </option>
+                                    <option> Kot Adu </option>
+                                    <option> Turbat </option>
+                                </select>
+                                <div class="icon-bg text-center">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="form-input-inner  has-float-label">
+                                <input type="text" name="address" placeholder="Address 2" class="form-control" required>
+                                <label>Address</label>
+                                <div class="icon-bg text-center">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-input-inner gender-select">
+                                <h3>Gender</h3>
+                                <div class="" style="width: 300px !important;">
+                                    <label>
+                                        <input type="radio" name="gender" value="Male" checked>
+                                        <span class="checkmark">Male</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="gender" value="Female">
+                                        <span class="checkmark">Female</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 mb-4">
+                            <div class="wizard-document-upload">
+                                <div class="custom-file form-input-inner ">
+                                    <input type="file" class="custom-file-input" name="file_upload" id="customFile"
+                                        required>
+                                    <label class="custom-file-label" for="customFile">Add Your
+                                        CV</label>
+                                    <div class="file-size-text ">Only : pdf / doc Size:
+                                        lessthan 1 Mb</div>
+                                    <div class="icon-bg text-center">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="education-fields">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-input-inner  has-float-label">
+                                <input type="text" name="institute" placeholder="Institute Name" class="form-control"
+                                    required>
+                                <label>Institute Name</label>
+                                <div class="icon-bg text-center">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-input-inner  has-float-label">
+                                <input type="text" name="degree" placeholder="Degree" class="form-control" required>
+                                <label>Degree</label>
+                                <div class="icon-bg text-center">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-input-inner select-option-area ">
+                                <select name="passing_year" required>
+                                    <option>Select Year</option>
+                                    <option> 2010 </option>
+                                    <option> 2011 </option>
+                                    <option> 2012 </option>
+                                    <option> 2013 </option>
+                                    <option> 2014 </option>
+                                    <option> 2015 </option>
+                                    <option> 2016 </option>
+                                    <option> 2017 </option>
+                                    <option> 2018 </option>
+                                    <option> 2019 </option>
+                                    <option> 2020 </option>
+                                    <option> 2021 </option>
+                                    <option> 2022 </option>
+                                    <option> 2023 </option>
+                                    <option> 2024 </option>
+                                    <option> 2025 </option>
+                                </select>
+                                <div class="icon-bg text-center">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="actions">
+                    <button type="submit" name="submit"><span class="js-btn-next" title="NEXT">Submit
+                        </span></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        $("#customFile").change(function () {
+            filename = this.files[0].name
+        });
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+        $('.datepicker').datepicker({
+            clearBtn: true,
+            format: "yyyy/mm/dd"
+        });
+    </script>
+
+    <!----------------------->
+    <!-- HTML code in index.html -->
+    <script>
+        // Retrieve the CNIC error message from the URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const errorMessageCNIC = urlParams.get('errorCNIC');
+
+        // Display the CNIC error message in the designated element
+        if (errorMessageCNIC) {
+            const errorMessageCNICElement = document.getElementById('error-message-cnic');
+            errorMessageCNICElement.textContent = errorMessageCNIC;
+        }
+
+        // Retrieve the Email error message from the URL query parameter
+        const errorMessageEMAIL = urlParams.get('errorEMAIL');
+
+        // Display the Email error message in the designated element
+        if (errorMessageEMAIL) {
+            const errorMessageEMAILElement = document.getElementById('error-message-email');
+            errorMessageEMAILElement.textContent = errorMessageEMAIL;
+        }
+    </script>
+
+    <!-------------------------->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var urlParams = new URLSearchParams(window.location.search);
+            var error = urlParams.get('error');
+            var emailError = document.getElementById('emailError');
+
+            if (error === 'invalid_email') {
+                emailError.textContent = 'Invalid email format';
+                var emailInput = document.getElementById('email');
+                emailInput.classList.add('error');
+            }
+        });
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
