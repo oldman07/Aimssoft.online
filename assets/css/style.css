@@ -2812,3 +2812,22 @@ ul li{
   color:  var(--firstColor);
 
 }
+.adjustment{
+  overflow-x: hidden;
+}
+.orange-line {
+  width: 100%;
+  height: 5px;
+  background-color: var(--firstColor);
+  margin-top: 25px;
+ }
+ .salient-card-bg{
+  background-color: var(--seventhColor);
+  border-radius: 30px;
+ }
+ .color-orange{
+  color: var(--firstColor);
+ }
+ .color-white{
+  color: var(--fifthColor);
+ }
