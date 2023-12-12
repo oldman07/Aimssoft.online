@@ -17,6 +17,9 @@
   --sixthColor: #fafafa;
   --seventhColor: #334756;
   --eightColor: #2A2A2A;
+  --ninthColor:#164863;
+  --tenthColor: #9BBEC8;
+  --eleventhColor: #DDF2FD;
 }
 
 /*--------------------------------------------------------------
@@ -2832,10 +2835,36 @@ ul li{
   margin-top: 25px;
   margin-left: -100px;
  }
+
+.orange-line-custom-salient-l {
+  width: 575px;
+  height: 5px;
+  background-color: var(--firstColor);
+  margin-top: 25px;
+  margin-left: -30px;
+ }
+ .orange-line-custom-salient-r {
+  width: 575px;
+  height: 5px;
+  background-color: var(--firstColor);
+  margin-top: 25px;
+  margin-left: -10px;
+ }
 .salient-card-bg{
   background-color: var(--seventhColor);
   border-radius: 30px;
  }
+ .salient-card-1{
+  margin-left: -4rem;
+ margin-right: 4rem;
+ }
+
+.salient-card-2{
+  margin-left: -2rem;
+ margin-right: 2rem;
+ }
+
+
 .color-orange{
   color: var(--firstColor);
  }
@@ -2844,7 +2873,7 @@ ul li{
  }
 .card-body {
   position: relative;
-  height: 450px;
+  height: 500px;
  }
 
 
@@ -2876,6 +2905,9 @@ ul li{
 .mr-lt{
   margin-left: 95px;
  }
+ .mr-lt{
+  margin-left: 95px;
+ }
 .bg-blue{
   background-color: var(--seventhColor);
  }
@@ -2894,21 +2926,34 @@ ul li{
  .mr-top-50{
   margin-top: 50px;
  }
+ .mr-top-100{
+  margin-top: 100px;
+ }
  .mr-top--50{
   margin-top: -50px;
  }
  .portal-img-style{
+  /* margin-left: 10px; */
   width: 500px; 
   height: 500px; 
   object-fit: contain;
   margin-top: -140px;
+  margin-left: 65px;
+ }
+ .portal-img-style-l{
+  margin-left: -5rem;
+  width: 500px; 
+  height: 500px; 
+  object-fit: contain;
+  margin-top: -140px;
+  /* margin-left: 65px; */
  }
  .mg-bot-50{
   margin-bottom: 50px;
  }
 
  .plan-card-heading-2{
-  margin-top: 40px;
+  margin-top: 60px;
   color: var(--firstColor);
   /* font-size: 20px !important; */
   align-content: center;
@@ -2948,16 +2993,26 @@ ul li{
 .pd-left-10{
   padding-left: 10px;
 }
- .mr-top-10{
+.mr-top-10{
   margin-top: 10px;
  }
- .mr-top-30{
+.mr-top-30{
   margin-top: 30px;
  }
- .mr-bottom-10{
+.mr-bottom-10{
   margin-bottom: 10px;
  }
+ .mr-bottom-50{
+  margin-bottom: 50px;
+ }
  .white-line{
+  width: 100%;
+  height: 5px;
+  background-color: var(--fifthColor);
+  margin-top: 25px;
+  /* padding-top: 10px; */
+ }
+ .white-line-footer{
   width: 100%;
   height: 5px;
   background-color: var(--fifthColor);
@@ -2968,3 +3023,55 @@ ul li{
  .salient-card-body{
   height: 250px;
  }
+.footer-img{
+  margin-top: -8em;
+    margin-left: -6em;
+}
+
+.bs{
+  display: inline;
+}
+
+li::marker {
+  margin: 500px !important;
+ }
+.bg-hero{
+  background-image: url('assets/img/School/fb.png');
+ }
+
+
+ /* Meri Shop */
+.bg-merishop-abovefooter{
+  background-color: var(--ninthColor);
+ }
+ .bg-merishop-blue{
+  background-color: var(--tenthColor);
+  
+ }
+ .bg-merishop{
+  background-color: var(--eleventhColor);
+ }
+
+ .color-lightblue{
+  color: var(--ninthColor);
+ }
+ .text-color-black{
+  color: var(--secondColor);
+ }
+ .black-line{
+  width: 100%;
+  height: 5px;
+  background-color: var(--secondColor);
+  margin-top: 25px;
+  /* padding-top: 10px; */
+ }
+ .merishop-footer-img{
+  margin-top: -8em;
+    margin-left: -4em;
+}
+.bg-pricingplan{
+  /* background-color: var(--tenthColor); */
+}
+.pricing-card{
+  height: 20rem;
+}
