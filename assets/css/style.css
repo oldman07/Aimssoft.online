@@ -2875,6 +2875,12 @@ ul li{
 .color-white{
   color: var(--fifthColor);
  }
+ .bgcolor-blue{
+  background-color: var(--ninthColor);
+ }
+ .bgcolor-lightblue{
+  background-color: var(--tenthColor);
+ }
 .card-body {
   position: relative;
   height: 500px;
@@ -2908,6 +2914,12 @@ ul li{
  }
 .mr-lt{
   margin-left: 95px;
+ }
+ .mr-right--100{
+    margin-right: -100px;
+ }
+ .mr-top-85{
+  margin-top: 85px;
  }
  .mr-lt-10{
   margin-left: 10px;
@@ -3009,6 +3021,9 @@ ul li{
  .mr-bottom-50{
   margin-bottom: 50px;
  }
+ .mr-bottom-100{
+  margin-bottom: 100px;
+ }
  .white-line{
   width: 100%;
   height: 5px;
@@ -3055,6 +3070,9 @@ li::marker {
  .bg-merishop{
   background-color: var(--eleventhColor);
  }
+ .bg-lightblue{
+  background-color: var(--tenthColor);
+ }
 
  .color-lightblue{
   color: var(--ninthColor);
@@ -3077,13 +3095,54 @@ li::marker {
   text-align: end;
 }
 
-
-
-
-
-
-
-
+.vertical-text {
+  /* writing-mode: vertical-rl; */
+  text-orientation: upright;
+  transform: rotate(270deg);
+ }
+ 
+.txt-align-end{
+  text-align: end;
+}
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px;
+ }
+ 
+ #rotated-text{
+  transform: rotate(270deg);
+  transform-origin: top left;
+  margin-top: 35rem;
+  /* margin-right: 10rem; */
+  font-size: 40px;
+  background-color: var(--ninthColor);
+  color: var(--sixthColor);
+  padding: 5px;
+  /* display: inline; */
+ }
+ #rotated-text-2{
+  transform: rotate(270deg);
+  /* transform-origin: top left; */
+  margin-top: 10rem;
+  /* margin-right: 10rem; */
+  font-size: 40px;
+  background-color: var(--ninthColor);
+  color: var(--sixthColor);
+  padding: 5px;
+  text-align: center;
+  /* display: inline; */
+ }
+ .pricingplan-top-tag{
+  background-color: var(--ninthColor);
+  /* display: inline-block; */
+  text-align: center;
+  /* z-index: ; */
+ }
+.z-index-1{
+  z-index: 1;
+}
 
 
 
@@ -3114,7 +3173,18 @@ li::marker {
 .font-2{
   font-size: 1.5rem !important;
 }
+.font-20{
+  font-size: 20px !important;
+}
 .font-merishop {
   font-family: 'Poppins', sans-serif;
  }
- 
+.playstore-img{
+  height: 100px;
+} 
+.font-80{
+  font-size: 80px;
+}
+
+
+
