@@ -20,6 +20,7 @@
   --ninthColor:#164863;
   --tenthColor: #9BBEC8;
   --eleventhColor: #DDF2FD;
+  --twelvthColor: #00FF85 ;
 }
 
 /*--------------------------------------------------------------
@@ -218,6 +219,9 @@ h2 {
   opacity: 70%;
   height: 80px;
   /* border-top: 0.2em solid var(--firstColor); */
+}
+#merishop-header{
+  background: var(--ninthColor);
 }
 .nav-link{
   color: #BDBDBD !important;
@@ -2837,18 +2841,18 @@ ul li{
  }
 
 .orange-line-custom-salient-l {
-  width: 575px;
+  width: 500px;
   height: 5px;
   background-color: var(--firstColor);
   margin-top: 25px;
-  margin-left: -30px;
+  margin-left: 0px;
  }
  .orange-line-custom-salient-r {
   width: 575px;
   height: 5px;
   background-color: var(--firstColor);
   margin-top: 25px;
-  margin-left: -10px;
+  margin-left: -60px;
  }
 .salient-card-bg{
   background-color: var(--seventhColor);
@@ -2905,8 +2909,8 @@ ul li{
 .mr-lt{
   margin-left: 95px;
  }
- .mr-lt{
-  margin-left: 95px;
+ .mr-lt-10{
+  margin-left: 10px;
  }
 .bg-blue{
   background-color: var(--seventhColor);
@@ -3069,9 +3073,48 @@ li::marker {
   margin-top: -8em;
     margin-left: -4em;
 }
+.section-2-merishop{
+  text-align: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .bg-pricingplan{
   /* background-color: var(--tenthColor); */
 }
 .pricing-card{
   height: 20rem;
 }
+.row-inline{
+  display: inline;
+}
+.custom-list i {
+  color: var(--twelvthColor);
+ }
+.star-li i{
+    color: var(--firstColor);
+ }
+.hero-setting{
+  margin-top: 120px;
+  background: url('assets/img/School/hero-bg.png');
+  z-index: 1;
+}
+
+
+/* Font Size */
+.font-2{
+  font-size: 1.5rem !important;
+}
+.font-merishop {
+  font-family: 'Poppins', sans-serif;
+ }
+ 
